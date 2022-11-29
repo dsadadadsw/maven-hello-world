@@ -1,7 +1,7 @@
 name: Maven CI/CD
 on:
-  push:
-     branches: [ dev ]
+  pull_request:
+     branches: [ 1 ]
 env:
   REPOSITORY: doronamsalem/mvn_hello_world
   POM: ./my-app/pom.xml
@@ -51,7 +51,7 @@ jobs:
           add: './my-app/pom.xml'
           author_name: doron amsalem
           author_email: 100doron100@gmail.com
-          fetch: false
+          fetch: true
           message: 'update pom version'
     -
       # ubuntu OS is required
