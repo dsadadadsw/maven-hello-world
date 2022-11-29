@@ -5,7 +5,6 @@ on:
 env:
   REPOSITORY: doronamsalem/mvn_hello_world
   POM: ./my-app/pom.xml
-
 jobs:
   ci-cd:
     runs-on: ubuntu-22.04
